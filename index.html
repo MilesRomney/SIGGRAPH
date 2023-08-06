@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                /* background: url('https://www.googleapis.com/drive/v3/files/1-vnjl27WDXXWVwPYaqc0kheyruOesCYD?alt=media&key=AIzaSyDwnRxEvICKGdRBI-ZuLSgBADwL18NTrJk') no-repeat; */
+                background: black;
+        		background-size: cover;
+            }
+
+            #frame {
+                width: calc(2160px / 2);
+                height: calc(3840px / 2);
+                margin: 0 auto;
+                transform: scale(2);
+                position: absolute;
+                top: 920px;
+                left: 540px;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            video, .container {
+                height: calc(3840px / 2 / 3 - 80px);
+                width: calc((3840px / 2 / 3 - 80px) * 16 / 9);
+            }
+
+    	    video {
+                /* filter: drop-shadow(0 0 20px rgba(0, 0, 0, 1)); */
+                border: 4px solid white;
+                position: relative;
+                left: 35px;
+            }
+
+            #top-container {
+                position: absolute;
+                top: 28px;
+                left: 0;
+                padding-top: 53px;
+            }
+
+            #middle-container {
+                position: absolute;
+                top: 700px;
+                left: 0;
+                height: 590px;
+            }
+
+            #bottom-container {
+                position: absolute;
+                top: 1315px;
+                left: 0;
+                height: 576px;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="frame">
+            <div id="top-container" class="container">
+                <video id="top" src="https://www.googleapis.com/drive/v3/files/1qeFayB_ore6BjgcEr-Ez3xEzxLETX0wx?alt=media&key=AIzaSyDwnRxEvICKGdRBI-ZuLSgBADwL18NTrJk" autoplay="true" loop="true" muted="true"></video>
+            </div>
+            <div id="middle-container" class="container">
+                <video id="middle" src="https://www.googleapis.com/drive/v3/files/1-UmyWJkVYtr9r27vdUDtmEpREr5lsMq2?alt=media&key=AIzaSyDwnRxEvICKGdRBI-ZuLSgBADwL18NTrJk" autoplay="true" loop="true" muted="true"></video>
+            </div>
+            <div id="bottom-container" class="container">
+                <video id="bottom" src="https://www.googleapis.com/drive/v3/files/1wwNH0gk0eZbyD8f9eyYD8pKxvndCayN4?alt=media&key=AIzaSyDwnRxEvICKGdRBI-ZuLSgBADwL18NTrJk" autoplay="true" loop="true" muted="true"></video>
+            </div>
+        </div>
+    </body>
+</html>
